@@ -1,0 +1,86 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+html,body{
+    
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+header{
+    background: #016bff;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 30px;
+    color: rgb(180, 180, 180);
+}
+
+.mid-space{
+    display: flex;
+    height: 80px;
+    padding: 20px 30px;
+    background-color: white;
+    border-radius: 4px;
+    font-size: 32px;
+    box-shadow: 15px 15px 15px rgba(1, 1, 1, 0.5);
+}
+
+.flex{
+    /* padding-left: 4px; */
+    display: flex;
+    flex-direction: column;
+    overflow: hidden;
+}
+
+span{
+    display: block;
+    height: 100%;
+    padding-left: 5px;
+    /* border: 1px solid black; */
+    color: #016bff;
+    animation: spin_words 8s infinite;
+}
+
+@keyframes spin_words{
+    8%{
+        transform: translateY(-112%);
+    }
+    16%{
+        transform: translateY(-100%);
+    } 
+    24%{
+        transform: translateY(-212%);
+    } 
+    32%{
+        transform: translateY(-200%);
+    } 
+    40%{
+        transform: translateY(-312%);
+    }
+    48%{
+        transform: translateY(-300%);
+    }
+    56%{
+        transform: translateY(-412%);
+    }
+    64%{
+        transform: translateY(-400%);
+    }
+    72%{
+        transform: translateY(-512%);
+    }
+    80%{
+        transform: translateY(-500%);
+    }
+    88%{
+        transform: translateY(-612%);
+    }
+    100%{
+        transform: translateY(-600%);
+    }
+}
